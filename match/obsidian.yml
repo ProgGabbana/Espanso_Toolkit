@@ -17,7 +17,6 @@ matches:
   # Result: `$|$`
   - trigger: ":icb"
     replace: "`$|$`"
-    word: true
 
   # --- Common Formatting Shortcuts ---
 
