@@ -7,28 +7,28 @@ matches:
   # Trigger: :cb
   # Result:
   # ```
-  # |$|
+  # $|$
   # ```
   - trigger: ":cb"
-    replace: "```\n$| \n```"
+    replace: "```\n$|$\n```"
 
   # Inline Code Block
   # Trigger: :icb
-  # Result: `|$|`
+  # Result: `$|$`
   - trigger: ":icb"
-    replace: "`|$|`"
+    replace: "`$|$`"
     word: true
 
   # --- Common Formatting Shortcuts ---
 
   # 8. Bold text
   - trigger: ":bold"
-    replace: "**|$|**"
+    replace: "**$|$**"
 
   # 9. Italic text
   - trigger: ":ital"
-    replace: "*|$|*"
+    replace: "*$|$*"
 
   # 10. Highlight text (Requires the Obsidian 'Highlight' syntax or similar plugins)
   - trigger: ":high"
-    replace: "==|$|=="
+    replace: "==$|$=="
