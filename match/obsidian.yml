@@ -10,10 +10,7 @@ matches:
   # |$|
   # ```
   - trigger: ":cb"
-    replace: |
-      ```
-      |$|
-      ```
+    replace: "```\n$| \n```"
 
   # Inline Code Block
   # Trigger: :icb
@@ -22,47 +19,16 @@ matches:
     replace: "`|$|`"
     word: true
 
-  # --- Table Snippets (Markdown Format) ---
-
-  # 5. Basic 2x2 Table
-  # Trigger: :t2x2
-  # Result:
-  # | Header 1 | Header 2 |
-  # | -------- | -------- |
-  # | Cell 1,1 | |$| |
-  - trigger: ":t2x2"
-    replace: |
-      | Header 1 | Header 2 |
-      | -------- | -------- |
-      | Cell 1,1 | |$| |
-
-  # 6. Basic 3x3 Table
-  # Trigger: :t3x3
-  - trigger: ":t3x3"
-    replace: |
-      | Col A | Col B | Col C |
-      | ----- | ----- | ----- |
-      | 1.A   | 1.B   | |$| |
-      | 2.A   | 2.B   | 2.C   |
-
-  # 7. Table with Alignment (Left, Center, Right)
-  # Trigger: :talign
-  - trigger: ":talign"
-    replace: |
-      | Left Aligned | Center Aligned | Right Aligned |
-      | :----------- | :------------: | ------------: |
-      | Data L       | Data C         | |$|           |
-
   # --- Common Formatting Shortcuts ---
 
   # 8. Bold text
-  - trigger: ":b"
+  - trigger: ":bold"
     replace: "**|$|**"
 
   # 9. Italic text
-  - trigger: ":i"
+  - trigger: ":ital"
     replace: "*|$|*"
 
   # 10. Highlight text (Requires the Obsidian 'Highlight' syntax or similar plugins)
-  - trigger: ":h"
+  - trigger: ":high"
     replace: "==|$|=="
