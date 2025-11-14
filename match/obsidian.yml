@@ -20,14 +20,14 @@ matches:
 
   # --- Common Formatting Shortcuts ---
 
-  # 8. Bold text
+  # Bold text
   - trigger: ":bold"
     replace: "**$|$**"
 
-  # 9. Italic text
+  # Italic text
   - trigger: ":ital"
     replace: "*$|$*"
 
-  # 10. Highlight text (Requires the Obsidian 'Highlight' syntax or similar plugins)
-  - trigger: ":high"
-    replace: "==$|$=="
+  # --- Proprietis ---
+  - trigger: ":prop"
+    replace: "---\ntags:$|$\n---"
