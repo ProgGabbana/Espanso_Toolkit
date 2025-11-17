@@ -1,22 +1,27 @@
 # espanso match file for Obsidian formatting, tables, and code blocks
 
 matches:
-  # --- Code Block Snippets ---
+  # --- Headings ---
 
-  # Simple Code Block (Fenced)
-  # Trigger: :cb
-  # Result:
-  # ```
-  # $|$
-  # ```
-  - trigger: ":cb"
-    replace: "```\n$|$\n```"
+  # Intestazione 2 (H2)
+  - trigger: ":h2"
+    replace: "##"
 
-  # Inline Code Block
-  # Trigger: :icb
-  # Result: `$|$`
-  - trigger: ":icb"
-    replace: "`$|$`"
+  # Intestazione 3 (H3)
+  - trigger: ":h3"
+    replace: "###"
+
+  # Intestazione 4 (H4)
+  - trigger: ":h4"
+    replace: "####"
+
+  # Intestazione 5 (H5)
+  - trigger: ":h5"
+    replace: "#####"
+
+  # Intestazione 6 (H6)
+  - trigger: ":h6"
+    replace: "######"
 
   # --- Common Formatting Shortcuts ---
 
@@ -28,6 +33,96 @@ matches:
   - trigger: ":ital"
     replace: "*$|$*"
 
+  # Strikethrough
+  - trigger: ":bar"
+    replace: "~~$|$~~"
+
+  # Highlight
+  - trigger: ":high"
+    replace: "==$|$=="
+
+  # --- Links ---
+
+  # Wikilink
+  - trigger: ":wlink"
+    replace: "[[$|$]]"
+
+  # External links
+  - trigger: ":elink"
+    replace: "[]($|$)"
+
+  # External images
+  - trigger: ":image"
+    replace: "![]($|$)"
+
+  # --- Quotes ---
+  - trigger: ":quote"
+    replace: ">\n\n\\-"
+
+  # --- Task lists ---
+
+  # Empty
+  - trigger: ":task"
+    replace: "- [] "
+
+  # Done
+  - trigger: ":xtask"
+    replace: "- [x] "
+
+  # --- Horizontal rule ---
+  - trigger: ":line"
+    replace: "***"
+
+  # --- Code Block Snippets ---
+
+  # Simple Code Block
+  - trigger: ":cb"
+    replace: "```\n$|$\n```"
+
+  # Inline Code Block
+  - trigger: ":icb"
+    replace: "`$|$`"
+
+  # --- Footnotes ---
+  - trigger: ":fnote"
+    replace: "[^$|$]"
+
+  # --- Comments ---
+  - trigger: ":comm"
+    replace: "%%\n%%"
+
+  # --- Escaping Markdown Syntax ---
+
+  # Hashtag
+  - trigger: ":#"
+    replace: "\\#"
+
+  # Asterisk
+  - trigger: ":*"
+    replace: "\\*"
+
+  # Underscore
+  - trigger: ":_"
+    replace: "\\_"
+
+  # Backtick
+  - trigger: ":backtick"
+    replace: "\\`"
+
+  # Pipe 
+  - trigger: ":pipe"
+    replace: "\\|"
+
+  # Tilde
+  - trigger: ":tilde"
+    replace: "\\~"
+
+  # --- Tables --- 
+  - trigger: ":tab"
+    replace: |
+      |     |     |
+      | --- |
+
   # --- Proprietis ---
-  - trigger: ":prop"
+  - trigger: ":obp"
     replace: "---\ntags:$|$\n---"
