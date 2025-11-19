@@ -26,11 +26,11 @@ matches:
   # --- Common Formatting Shortcuts ---
 
   # Bold text
-  - trigger: ":bold"
+  - trigger: ":b"
     replace: "**$|$**"
 
   # Italic text
-  - trigger: ":ital"
+  - trigger: ":it"
     replace: "*$|$*"
 
   # Strikethrough
@@ -44,20 +44,16 @@ matches:
   # --- Links ---
 
   # Wikilink
-  - trigger: ":wlink"
+  - trigger: ":wl"
     replace: "[[$|$]]"
 
   # External links
-  - trigger: ":elink"
+  - trigger: ":el"
     replace: "[]($|$)"
 
   # External images
   - trigger: ":image"
-    replace: "![]($|$)"
-
-  # --- Quotes ---
-  - trigger: ":quote"
-    replace: ">\n\n\\-"
+    replace: "![]($|$)" 
 
   # --- Task lists ---
 
@@ -71,13 +67,134 @@ matches:
 
   # --- Horizontal rule ---
   - trigger: ":line"
-    replace: "***"
+    replace: "---"
 
   # --- Code Block Snippets ---
 
   # Simple Code Block
   - trigger: ":cb"
-    replace: "```\n$|$\n```"
+    replace: |
+      ```
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":cvba"
+    replace: |
+      ```VBA
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":cpy"
+    replace: |
+      ```py
+      $|$
+      ```
+  
+  # Simple Code Block
+  - trigger: ":cc"
+    replace: |
+      ```c
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":cjs"
+    replace: |
+      ```js
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":cts"
+    replace: |
+      ```ts
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":cyml"
+    replace: |
+      ```yml
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":cmatlab"
+    replace: |
+      ```matlab
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":chtml"
+    replace: |
+      ```html
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":css"
+    replace: |
+      ```css
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":carduino"
+    replace: |
+      ```arduino
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":cpp"
+    replace: |
+      ```cpp
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":cs"
+    replace: |
+      ```csharp
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":cphp"
+    replace: |
+      ```cphp
+      $|$
+      ```
+  # Simple Code Block
+  - trigger: ":cjava"
+    replace: |
+      ```java
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":cpowershell"
+    replace: |
+      ```powershell
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":cr"
+    replace: |
+      ```r
+      $|$
+      ```
+
+  # Simple Code Block
+  - trigger: ":crust"
+    replace: |
+      ```rust
+      $|$
+      ```
 
   # Inline Code Block
   - trigger: ":icb"
@@ -89,7 +206,10 @@ matches:
 
   # --- Comments ---
   - trigger: ":comm"
-    replace: "%%\n%%"
+    replace: |
+      %%
+      $|$
+      %%
 
   # --- Escaping Markdown Syntax ---
 
@@ -118,11 +238,35 @@ matches:
     replace: "\\~"
 
   # --- Tables --- 
+  # Left-aligned
   - trigger: ":tab"
     replace: |
-      |     |     |
-      | --- |
+      | $|$  |      |
+      | :--- |
 
+  # Aligned
+  - trigger: ":atab"
+    replace: |
+      |  $|$  |       |
+      | :---: |
+
+  # Right-aligned
+  - trigger: ":tab"
+    replace: |
+      | $|$  |      |
+      | ---: |
+
+  # --- Math ---
+  - trigger: ":ml"
+    replace: "$$|$$"
+
+  - trigger: ":mb"
+    replace: "$$$|$$$"
+
+    
   # --- Proprietis ---
-  - trigger: ":obp"
-    replace: "---\ntags:$|$\n---"
+  - trigger: ":op"
+    replace: |
+      ---
+      Tags:
+      ---
