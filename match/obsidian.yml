@@ -269,4 +269,5 @@ matches:
     replace: |
       ---
       Tags:
+      BlueprintCheck: false
       ---
