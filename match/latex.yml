@@ -1,0 +1,106 @@
+matches:
+
+  # Environments
+  - trigger: ":align"
+    replace: |
+      \begin{align}
+      $|$
+      \end{align}
+
+  - trigger: ":gathered"
+    replace: |
+      \begin{gathered}
+      $|$
+      \end{gathered}
+
+  - trigger: ":multline"
+    replace: |
+      \begin{multline}
+      $|$
+      \end{multline}
+
+  - trigger: ":flalign"
+    replace: |
+      \begin{flalign*}
+      $|$
+      \end{flalign*}
+
+  - trigger: ":matrix"
+    replace: |
+      \begin{matrix}
+      $|$
+      \end{matrix}
+
+  - trigger: ":cases"
+    replace: |
+      \begin{cases}
+      $|$
+      \end{cases}
+
+  - trigger: ":alignat"
+    replace: |
+      \begin{alignat}
+      $|$
+      \end{alignat}
+
+  # Greek letters
+  - trigger: "@a"
+    replace: "\\alpha"
+
+  - trigger: "@b"
+    replace: "\\beta"
+
+  - trigger: "@g"
+    replace: "\\gamma"
+
+  - trigger: "@G"
+    replace: "\\Gamma"
+
+  - trigger: "@d"
+    replace: "\\delta"
+
+  - trigger: "@D"
+    replace: "\\Delta"
+
+  - trigger: "@e"
+    replace: "\\varepsilon"
+
+  - trigger: "@z"
+    replace: "\\zeta"
+
+  - trigger: "@t"
+    replace: "\\theta"
+
+  - trigger: "@T"
+    replace: "\\Theta"
+
+  - trigger: "@i"
+    replace: "\\iota"
+
+  - trigger: "@k"
+    replace: "\\kappa"
+
+  - trigger: "@l"
+    replace: "\\lambda"
+
+  - trigger: "@L"
+    replace: "\\Lambda"
+
+  - trigger: "@s"
+    replace: "\\sigma"
+
+  - trigger: "@S"
+    replace: "\\Sigma"
+
+  - trigger: "@u"
+    replace: "\\upsilon"
+
+  - trigger: "@U"
+    replace: "\\Upsilon"
+
+  - trigger: "@o"
+    replace: "\\omega"
+
+  - trigger: "@O"
+    replace: "\\Omega"
+

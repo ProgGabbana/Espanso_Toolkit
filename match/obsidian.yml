@@ -1,4 +1,4 @@
-# espanso match file for Obsidian formatting, tables, and code blocks
+# espanso match file for Obsidian
 
 matches:
   # --- Headings ---
@@ -79,14 +79,14 @@ matches:
       ```
 
   # Simple Code Block
-  - trigger: ":cvba"
+  - trigger: ":vba"
     replace: |
       ```VBA
       $|$
       ```
 
   # Simple Code Block
-  - trigger: ":cpy"
+  - trigger: ":py"
     replace: |
       ```py
       $|$
@@ -100,35 +100,35 @@ matches:
       ```
 
   # Simple Code Block
-  - trigger: ":cjs"
+  - trigger: ":js"
     replace: |
       ```js
       $|$
       ```
 
   # Simple Code Block
-  - trigger: ":cts"
+  - trigger: ":ts"
     replace: |
       ```ts
       $|$
       ```
 
   # Simple Code Block
-  - trigger: ":cyml"
+  - trigger: ":yml"
     replace: |
       ```yml
       $|$
       ```
 
   # Simple Code Block
-  - trigger: ":cmatlab"
+  - trigger: ":matlab"
     replace: |
       ```matlab
       $|$
       ```
 
   # Simple Code Block
-  - trigger: ":chtml"
+  - trigger: ":html"
     replace: |
       ```html
       $|$
@@ -142,7 +142,7 @@ matches:
       ```
 
   # Simple Code Block
-  - trigger: ":carduino"
+  - trigger: ":arduino"
     replace: |
       ```arduino
       $|$
@@ -163,20 +163,20 @@ matches:
       ```
 
   # Simple Code Block
-  - trigger: ":cphp"
+  - trigger: ":php"
     replace: |
       ```cphp
       $|$
       ```
   # Simple Code Block
-  - trigger: ":cjava"
+  - trigger: ":java"
     replace: |
       ```java
       $|$
       ```
 
   # Simple Code Block
-  - trigger: ":cpowershell"
+  - trigger: ":powershell"
     replace: |
       ```powershell
       $|$
@@ -190,7 +190,7 @@ matches:
       ```
 
   # Simple Code Block
-  - trigger: ":crust"
+  - trigger: ":rust"
     replace: |
       ```rust
       $|$
@@ -239,28 +239,28 @@ matches:
 
   # --- Tables --- 
   # Left-aligned
-  - trigger: ":tab"
+  - trigger: ":ltab"
     replace: |
       | $|$  |      |
       | :--- |
 
   # Aligned
-  - trigger: ":atab"
+  - trigger: ":tab"
     replace: |
       |  $|$  |       |
       | :---: |
 
   # Right-aligned
-  - trigger: ":tab"
+  - trigger: ":rtab"
     replace: |
       | $|$  |      |
       | ---: |
 
   # --- Math ---
-  - trigger: ":ml"
+  - trigger: "mk"
     replace: "$$|$$"
 
-  - trigger: ":mb"
+  - trigger: "dm"
     replace: "$$$|$$$"
 
     
