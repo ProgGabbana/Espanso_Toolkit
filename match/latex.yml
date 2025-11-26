@@ -104,3 +104,357 @@ matches:
   - trigger: "@O"
     replace: "\\Omega"
 
+  - trigger: ":lim"
+    replace: "\\lim_{x \\to $|$}"
+
+  - trigger: "ooo"
+    replace: "\\infty"
+
+  - trigger: ":NN"
+    replace: "\\mathbb{N}"
+
+  - trigger: ":ZZ"
+    replace: "\\mathbb{Z}"
+
+  - trigger: ":QQ"
+    replace: "\\mathbb{Q}"
+
+  - trigger: ":RR"
+    replace: "\\mathbb{R}"
+
+  - trigger: ":CC"
+    replace: "\\mathbb{C}"
+
+  - trigger: ":HH"
+    replace: "\\mathbb{H}"
+
+  - trigger: ":PP"
+    replace: "\\mathbb{P}"
+
+  - trigger: ":SS"
+    replace: "\\mathbb{S}"
+
+  - trigger: ":FF"
+    replace: "\\mathbb{F}"
+
+  - trigger: "_"
+    replace: "_{$|$}"
+
+  - trigger: "^"
+    replace: "^{$|$}"
+
+  - trigger: ":EE"
+    replace: "\\exists"
+
+  # Text environment
+  - trigger: "text"
+    replace: "\\text{$|$}"
+
+  - trigger: "sq"
+    replace: "\\sqrt{$|$}"
+
+  - trigger: "//"
+    replace: "\\frac{$|$}{}"
+
+  - trigger: "ee"
+    replace: "e^{ $|$ }$1"
+
+  - trigger: "invs"
+    replace: "^{-1}"
+
+  - trigger: "conj"
+    replace: "^{*}"
+
+  - trigger: "Re"
+    replace: "\\mathrm{Re}"
+
+  - trigger: "Im"
+    replace: "\\mathrm{Im}"
+
+  - trigger: "bf"
+    replace: "\\mathbf{$|$}"
+
+  - trigger: "rm"
+    replace: \\mathrm{$|$}"
+
+  # Linear algebra
+  - trigger: "trace"
+    replace: "\\mathrm{Tr}"
+
+  # More operations
+  - trigger: "hat"
+    replace: "\\hat{$|$}"
+
+  - trigger: "bar"
+    replace: "\\bar{$|$}"
+
+  - trigger: "dot"
+    replace: "\\dot{$|$}"
+
+  - trigger: "ddot"
+    replace: "\\ddot{$|$}"
+
+  - trigger: "cdot"
+    replace: "\\cdot"
+
+  - trigger: "tilde"
+    replace: "\\tilde{$|$}"
+
+  - trigger: "und"
+    replace: "\\underline{$|$}"
+
+  - trigger: "vec"
+    replace: "\vec{$|$}"
+
+  # More auto letter subscript
+  - trigger: "xnn"
+    replace: "x_{n}"
+
+  - trigger: "\\xii"
+    replace: "x_{i}"
+
+  - trigger: "xjj"
+    replace: "x_{j}"
+
+  - trigger: "xp1"
+    replace: "x_{n+1}"
+
+  - trigger: "ynn"
+    replace: "y_{n}"
+
+  - trigger: "yii"
+    replace: "y_{i}"
+
+  - trigger: "yjj"
+    replace: "y_{j}"
+
+  # Symbols
+  - trigger: "ooo"
+    replace: "\\infty"
+
+  - trigger: "sum"
+    replace: "\\sum"
+
+  - trigger: "prod"
+    replace: "\\prod"
+
+  - trigger: "+-"
+    replace: "\\pm"
+
+  - trigger: "-+"
+    replace: "\\mp"
+
+  - trigger: "..."
+    replace: "\\dots"
+
+  - trigger: "nabl"
+    replace: "\\nabla"
+
+  - trigger: "xx"
+    replace: "\\times"
+
+  - trigger: "**"
+    replace: "\\cdot"
+
+  - trigger: "para"
+    replace: "\\parallel"
+
+  - trigger: "==="
+    replace: "\\equiv"
+
+  - trigger: "!="
+    replace: "\\neq"
+
+  - trigger: ">="
+    replace: "\\geq"
+
+  - trigger: "<="
+    replace: "\\leq"
+
+  - trigger: ">>"
+    replace: "\\gg"
+
+  - trigger: "<<"
+    replace: "\\ll"
+
+  - trigger: "simm"
+    replace: "\\sim"
+
+  - trigger: "sim="
+    replace: "\\simeq"
+
+  - trigger: "prop"
+    replace: "\\propto"
+
+  - trigger: "<->"
+    replace: "\\leftrightarrow "
+
+  - trigger: "->"
+    replace: "\\to"
+
+  - trigger: "!>"
+    replace: "\\mapsto"
+
+  - trigger: "=>"
+    replace: "\\implies"
+
+  - trigger: "=<"
+    replace: "\\impliedby"
+
+  - trigger: "and"
+    replace: "\\cap"
+
+  - trigger: ":orr"
+    replace: "\\cup"
+
+  - trigger: "inn"
+    replace: "\\in"
+
+  - trigger: "notin"
+    replace: "\\not\\in"
+
+  - trigger: "\\\\\\\\"
+    replace: "\\setminus"
+
+  - trigger: "sub="
+    replace: "\\subseteq"
+
+  - trigger: "sup="
+    replace: "\\supseteq"
+
+  - trigger: "eset"
+    replace: "\\emptyset"
+
+  - trigger: "set"
+    replace: "\\{ $|$ \\}"
+
+  - trigger: "exists"
+    replace: "\\exists"
+
+  # Derivatives and integrals
+  - trigger: "ddt"
+    replace: "\\frac{d}{dt} "
+
+  - trigger: "oint"
+    replace: "\\oint"
+
+  - trigger: "iint"
+    replace: "\\iint"
+
+  - trigger: "iiint"
+    replace: "\\iiint"
+
+  # Physics
+  - trigger: "kbt"
+    replace: "k_{B}T"
+
+  - trigger: "msun"
+    replace: "M_{\\odot}"
+
+  # Quantum mechanics
+  - trigger: "dag"
+    replace: "^{\\dagger}"
+
+  - trigger: "o+"
+    replace: "\\oplus "
+
+  - trigger: "ox"
+    replace: "\\otimes "
+
+  - trigger: "bra"
+    replace: "\\bra{$|$} $1"
+
+  - trigger: "ket"
+    replace: "\\ket{$|$} $1"
+
+  - trigger: "brk"
+    replace: "\\braket{ $|$ | $1 } $2"
+
+  # Environments
+  - trigger: "pmat"
+    replace: |
+      \begin{pmatrix}
+      $|$
+      \end{pmatrix}
+
+  - trigger: "bmat"
+    replace: |
+      \begin{bmatrix}
+      $|$
+      \end{bmatrix}
+
+  - trigger: "Bmat"
+    replace: |
+      \begin{Bmatrix}
+      $|$
+      \end{Bmatrix}
+
+  - trigger: "vmat"
+    replace: |
+      \begin{vmatrix}
+      $|$
+      \end{vmatrix}
+
+  - trigger: "Vmat"
+    replace: |
+      \begin{Vmatrix}
+      $|$
+      \end{Vmatrix}
+
+  - trigger: "matrix"
+    replace: |
+      \begin{matrix}
+      $|$
+      \end{matrix}
+
+  - trigger: "cases"
+    replace: |
+      \begin{cases}
+      $|$
+      \end{cases}
+
+  - trigger: "align"
+    replace: |
+      \begin{align}
+      $|$
+      \end{align}
+
+  - trigger: "array"
+    replace: |
+      \begin{array}
+      $|$
+      \end{array}
+
+  # Brackets
+  - trigger: "avg"
+    replace: "\\langle $|$ \\rangle"
+
+  - trigger: "norm"
+    replace: "\\lvert $|$ \\rvert"
+
+  - trigger: "Norm"
+    replace: "\\lVert $|$ \\rVert"
+
+  - trigger: "ceil"
+    replace: "\\lceil $|$ \\rceil"
+
+  - trigger: "floor"
+    replace: "\\lfloor $|$ \\rfloor"
+
+  - trigger: "mod"
+    replace: "|$|$|"
+
+  - trigger: "lr("
+    replace: "\\left( $|$ \\right)"
+
+  - trigger: "lr{"
+    replace: "\\left\\{ $|$ \\right\\}"
+
+  - trigger: "lr["
+    replace: "\\left[ $|$ \\right]"
+
+  - trigger: "lr|"
+    replace: "\\left| $|$ \\right|"
+
+  - trigger: "lra"
+    replace: "\\left< $|$ \\right>"
