@@ -25,12 +25,6 @@ matches:
       $|$
       \end{flalign*}
 
-  - trigger: ":matrix"
-    replace: |
-      \begin{matrix}
-      $|$
-      \end{matrix}
-
   - trigger: ":cases"
     replace: |
       \begin{cases}
@@ -107,9 +101,6 @@ matches:
   - trigger: ":lim"
     replace: "\\lim_{x \\to $|$}"
 
-  - trigger: "ooo"
-    replace: "\\infty"
-
   - trigger: ":NN"
     replace: "\\mathbb{N}"
 
@@ -147,95 +138,95 @@ matches:
     replace: "\\exists"
 
   # Text environment
-  - trigger: "text"
+  - trigger: ":text"
     replace: "\\text{$|$}"
 
-  - trigger: "sq"
+  - trigger: ":sq"
     replace: "\\sqrt{$|$}"
 
-  - trigger: "//"
+  - trigger: "://"
     replace: "\\frac{$|$}{}"
 
-  - trigger: "ee"
+  - trigger: ":ee"
     replace: "e^{ $|$ }$1"
 
-  - trigger: "invs"
+  - trigger: ":invs"
     replace: "^{-1}"
 
-  - trigger: "conj"
+  - trigger: ":conj"
     replace: "^{*}"
 
-  - trigger: "Re"
+  - trigger: ":Re"
     replace: "\\mathrm{Re}"
 
-  - trigger: "Im"
+  - trigger: ":Im"
     replace: "\\mathrm{Im}"
 
-  - trigger: "bf"
+  - trigger: ":bf"
     replace: "\\mathbf{$|$}"
 
-  - trigger: "rm"
+  - trigger: ":rm":
     replace: \\mathrm{$|$}"
 
   # Linear algebra
-  - trigger: "trace"
+  - trigger: ":trace"
     replace: "\\mathrm{Tr}"
 
   # More operations
-  - trigger: "hat"
+  - trigger: ":hat"
     replace: "\\hat{$|$}"
 
-  - trigger: "bar"
+  - trigger: ":bar"
     replace: "\\bar{$|$}"
 
-  - trigger: "dot"
+  - trigger: ":dot"
     replace: "\\dot{$|$}"
 
-  - trigger: "ddot"
+  - trigger: ":ddot"
     replace: "\\ddot{$|$}"
 
-  - trigger: "cdot"
+  - trigger: ":cdot"
     replace: "\\cdot"
 
-  - trigger: "tilde"
+  - trigger: ":tilde"
     replace: "\\tilde{$|$}"
 
-  - trigger: "und"
+  - trigger: ":und"
     replace: "\\underline{$|$}"
 
-  - trigger: "vec"
+  - trigger: ":vec"
     replace: "\vec{$|$}"
 
   # More auto letter subscript
-  - trigger: "xnn"
+  - trigger: ":xnn"
     replace: "x_{n}"
 
-  - trigger: "\\xii"
+  - trigger: ":\\xii"
     replace: "x_{i}"
 
-  - trigger: "xjj"
+  - trigger: ":xjj"
     replace: "x_{j}"
 
-  - trigger: "xp1"
+  - trigger: ":xp1"
     replace: "x_{n+1}"
 
-  - trigger: "ynn"
+  - trigger: ":ynn"
     replace: "y_{n}"
 
-  - trigger: "yii"
+  - trigger: ":yii"
     replace: "y_{i}"
 
-  - trigger: "yjj"
+  - trigger: ":yjj"
     replace: "y_{j}"
 
   # Symbols
-  - trigger: "ooo"
+  - trigger: ":ooo"
     replace: "\\infty"
 
-  - trigger: "sum"
+  - trigger: ":sum"
     replace: "\\sum"
 
-  - trigger: "prod"
+  - trigger: ":prod"
     replace: "\\prod"
 
   - trigger: "+-"
@@ -247,16 +238,16 @@ matches:
   - trigger: "..."
     replace: "\\dots"
 
-  - trigger: "nabl"
+  - trigger: ":nabl"
     replace: "\\nabla"
 
-  - trigger: "xx"
+  - trigger: ":xx"
     replace: "\\times"
 
   - trigger: "**"
     replace: "\\cdot"
 
-  - trigger: "para"
+  - trigger: ":para"
     replace: "\\parallel"
 
   - trigger: "==="
@@ -277,13 +268,13 @@ matches:
   - trigger: "<<"
     replace: "\\ll"
 
-  - trigger: "simm"
+  - trigger: ":simm"
     replace: "\\sim"
 
-  - trigger: "sim="
+  - trigger: ":sim="
     replace: "\\simeq"
 
-  - trigger: "prop"
+  - trigger: ":prop"
     replace: "\\propto"
 
   - trigger: "<->"
@@ -301,160 +292,160 @@ matches:
   - trigger: "=<"
     replace: "\\impliedby"
 
-  - trigger: "and"
+  - trigger: ":and"
     replace: "\\cap"
 
   - trigger: ":orr"
     replace: "\\cup"
 
-  - trigger: "inn"
+  - trigger: ":inn"
     replace: "\\in"
 
-  - trigger: "notin"
+  - trigger: ":notin"
     replace: "\\not\\in"
 
   - trigger: "\\\\\\\\"
     replace: "\\setminus"
 
-  - trigger: "sub="
+  - trigger: ":sub="
     replace: "\\subseteq"
 
-  - trigger: "sup="
+  - trigger: ":sup="
     replace: "\\supseteq"
 
-  - trigger: "eset"
+  - trigger: ":eset"
     replace: "\\emptyset"
 
-  - trigger: "set"
+  - trigger: ":set"
     replace: "\\{ $|$ \\}"
 
-  - trigger: "exists"
+  - trigger: ":exi"
     replace: "\\exists"
 
   # Derivatives and integrals
-  - trigger: "ddt"
+  - trigger: ":ddt"
     replace: "\\frac{d}{dt} "
 
-  - trigger: "oint"
+  - trigger: ":oint"
     replace: "\\oint"
 
-  - trigger: "iint"
+  - trigger: ":iint"
     replace: "\\iint"
 
-  - trigger: "iiint"
+  - trigger: ":iiint"
     replace: "\\iiint"
 
   # Physics
-  - trigger: "kbt"
+  - trigger: ":kbt"
     replace: "k_{B}T"
 
-  - trigger: "msun"
+  - trigger: ":msun"
     replace: "M_{\\odot}"
 
   # Quantum mechanics
-  - trigger: "dag"
+  - trigger: ":dag"
     replace: "^{\\dagger}"
 
-  - trigger: "o+"
+  - trigger: ":o+"
     replace: "\\oplus "
 
-  - trigger: "ox"
+  - trigger: ":ox"
     replace: "\\otimes "
 
-  - trigger: "bra"
+  - trigger: ":bra"
     replace: "\\bra{$|$} $1"
 
-  - trigger: "ket"
+  - trigger: ":ket"
     replace: "\\ket{$|$} $1"
 
-  - trigger: "brk"
+  - trigger: ":brk"
     replace: "\\braket{ $|$ | $1 } $2"
 
   # Environments
-  - trigger: "pmat"
+  - trigger: ":pmat"
     replace: |
       \begin{pmatrix}
       $|$
       \end{pmatrix}
 
-  - trigger: "bmat"
+  - trigger: ":bmat"
     replace: |
       \begin{bmatrix}
       $|$
       \end{bmatrix}
 
-  - trigger: "Bmat"
+  - trigger: ":Bmat"
     replace: |
       \begin{Bmatrix}
       $|$
       \end{Bmatrix}
 
-  - trigger: "vmat"
+  - trigger: ":vmat"
     replace: |
       \begin{vmatrix}
       $|$
       \end{vmatrix}
 
-  - trigger: "Vmat"
+  - trigger: ":Vmat"
     replace: |
       \begin{Vmatrix}
       $|$
       \end{Vmatrix}
 
-  - trigger: "matrix"
+  - trigger: ":matrix"
     replace: |
       \begin{matrix}
       $|$
       \end{matrix}
 
-  - trigger: "cases"
+  - trigger: ":cases"
     replace: |
       \begin{cases}
       $|$
       \end{cases}
 
-  - trigger: "align"
+  - trigger: ":align"
     replace: |
       \begin{align}
       $|$
       \end{align}
 
-  - trigger: "array"
+  - trigger: ":array"
     replace: |
       \begin{array}
       $|$
       \end{array}
 
   # Brackets
-  - trigger: "avg"
+  - trigger: ":avg"
     replace: "\\langle $|$ \\rangle"
 
-  - trigger: "norm"
+  - trigger: ":norm"
     replace: "\\lvert $|$ \\rvert"
 
-  - trigger: "Norm"
+  - trigger: ":Norm"
     replace: "\\lVert $|$ \\rVert"
 
-  - trigger: "ceil"
+  - trigger: ":ceil"
     replace: "\\lceil $|$ \\rceil"
 
-  - trigger: "floor"
+  - trigger: ":floor"
     replace: "\\lfloor $|$ \\rfloor"
 
-  - trigger: "mod"
+  - trigger: ":mod"
     replace: "|$|$|"
 
-  - trigger: "lr("
+  - trigger: ":lr("
     replace: "\\left( $|$ \\right)"
 
-  - trigger: "lr{"
+  - trigger: ":lr{"
     replace: "\\left\\{ $|$ \\right\\}"
 
-  - trigger: "lr["
+  - trigger: ":lr["
     replace: "\\left[ $|$ \\right]"
 
-  - trigger: "lr|"
+  - trigger: ":lr|"
     replace: "\\left| $|$ \\right|"
 
-  - trigger: "lra"
+  - trigger: ":lra"
     replace: "\\left< $|$ \\right>"

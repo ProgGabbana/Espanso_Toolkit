@@ -45,7 +45,7 @@ matches:
 
   # Wikilink
   - trigger: ":wl"
-    replace: "[[$|$]]"
+    replace: "[[|$|$]]"
 
   # External links
   - trigger: ":el"
