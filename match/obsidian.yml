@@ -257,17 +257,23 @@ matches:
       | ---: |
 
   # --- Math ---
-  - trigger: "mk"
+  - trigger: ":mk"
     replace: "$$|$$"
 
-  - trigger: "dm"
+  - trigger: ":dm"
     replace: "$$$|$$$"
 
     
   # --- Proprietis ---
-  - trigger: ":op"
+  - trigger: ":atomic"
     replace: |
       ---
+      Aliases:
+      Type: Atomic
+      Category: 
+      Author: 
+        - Me
+        - Gemini
       Tags:
-      BlueprintCheck: false
+      Draft: false
       ---
