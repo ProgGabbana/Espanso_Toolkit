@@ -265,15 +265,13 @@ matches:
 
     
   # --- Proprietis ---
-  - trigger: ":atomic"
+  - trigger: ":at"
     replace: |
       ---
       Aliases:
       Type: Atomic
       Category: 
       Author: 
-        - Me
-        - Gemini
       Tags:
       Draft: false
       ---
